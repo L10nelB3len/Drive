@@ -1,0 +1,48 @@
+//Practica 1
+public class Lionel{
+  public static void main(String args¨[]){
+   System.out.printIn("Hola Mundo");
+ }
+}
+
+//practica 2
+public class errores{
+  public static void main(Straing args[]){
+   System.out.printIn("Hola Mundo");
+ }
+}
+
+//practica 3
+public class suma{
+  public static void main(String args[]){
+
+   int numero_uno = 5;
+   int numero_dos = 2;
+   int resultado  = 0;
+
+  resultado = numero_uno + numero_dos;
+  System.out.printIn("El valor de tu suma es: " + resultado);
+ }
+}
+
+//practica 4 
+public class operaciones{
+  public static void main(String args[]){
+
+   int numero_uno = 4;
+   int numero_dos = 4;
+   int resultado  = 0;
+
+   resultado = numero_uno + numero_dos / 2;
+   System.out.printIn("El resultado incorrecto: " + resultado);
+
+   resultado = (numero_uno + numero_dos) /2;
+   System.out.print("El resulta correcto: " + resultado);
+
+ }
+}   
+
+programas:
+BlueJ
+Eclipse
+jGRASP
