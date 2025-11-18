@@ -1,0 +1,54 @@
+?? Informe Técnico Preliminar (ITP): El Jardín de la Memoria:
+
+1.Información General del Proyecto
+Parámetro,Valor
+Nombre del Juego,El Jardín de la Memoria
+Plataforma,Python (Pygame)
+Género,"Aventura, Puzle, Exploración 2D"
+Estilo Visual,Pixel Art (Entorno/Personajes) / Fotografía Real (Coleccionables)
+Target,Juego personal dedicado a la madre del desarrollador
+Objetivo,"Recuperar y guardar ""Flores de Familia"" (fotos) en el Libro de Recuerdos."
+
+2. Estructura y Estética del Juego
+2.1. Entorno (Mapa)
+Nombre: El Jardín de la Memoria.
+Diseño: Mapa único y grande, dividido en Áreas Temáticas (ej. Camino de la Infancia, Laberinto de la Aventura, El Mirador).
+Tono: Tranquilo, acogedor y visualmente estimulante (colores vibrantes/pastel, pixel art detallado).
+Exploración: Gran libertad de movimiento, con caminos que se abren al resolver puzles o completar misiones.
+
+2.2. Estética Visual
+Gráficos 2D: Uso de tilesets de pixel art para construir el mapa y los objetos.
+Contraste: Fuerte contraste entre el estilo pixelado del juego y las fotos reales de la familia, lo que añade un valor sentimental y un impacto visual cuando se encuentran.
+
+3. Mecánicas de Juego (Core Gameplay)
+Mecánica,Descripción
+Exploración 2D,"Movimiento libre del personaje (Arriba, Abajo, Izquierda, Derecha) a través del gran mapa."
+Puzles de Perspectiva,"El jugador debe encontrar un punto (x,y) específico donde la alineación de objetos del entorno revele un camino o un interruptor."
+Sistema de Misiones,"Personajes no jugadores (NPCs) específicos en el mapa otorgan tareas (misiones) para obtener llaves, semillas o desbloquear nuevas áreas."
+Parkour/Plataformas,"En la zona de ""El Mirador"", se implementarán secciones de plataformas que requieren precisión en el salto para alcanzar la cima."
+Interacción,"Un único botón de acción para hablar con NPCs, recoger objetos, o interactuar con puntos de puzle."
+
+4. Componentes Clave del Juego
+4.1. El Mirador (Punto Central)
+Función: Actúa como el punto de guardado y el hub de coleccionables.
+Acceso: Requiere subir una estructura vertical de plataformas o parkour.
+Proceso: Una vez que el jugador encuentra una "Flor de Familia" (foto), debe llevarla a la cima del Mirador. Al "colocar" la foto en el Mirador, esta se guarda permanentemente en el Libro de Recuerdos.
+
+4.2. El Libro de Recuerdos (Menú/UI)
+Tipo: Interfaz de usuario (UI) accesible desde el menú principal o un botón dedicado.
+Función: Almacena y muestra todas las Flores de Familia (fotos) recolectadas.
+Detalle: Cada foto debe ir acompañada de un breve espacio de texto para que puedas añadir una anécdota o una descripción sentimental asociada a ese recuerdo.
+
+4.3. Personajes (NPCs)
+Función: Viven en el jardín, ayudan a guiar al jugador y otorgan misiones que son cruciales para el progreso.
+Ejemplos de NPCs:
+El Guardián del Laberinto: Te da pistas sobre la alineación de setos.
+La Anciana de las Semillas: Te pide que recuperes objetos perdidos a cambio de las "Semillas de Recuerdo" necesarias.
+
+5. Requisitos Técnicos Mínimos (Pygame)
+Requisito,Detalle Técnico
+Motor de Juego,Pygame 2.x (Se recomienda una versión reciente para mejor compatibilidad).
+Sistema de Movimiento,"Clase Player con métodos para movimiento, colisión y estado (idle, walking, jumping)."
+Gestión de Mapas,Uso de una herramienta como Tiled para crear mapas con tilesets que se cargan y renderizan en Pygame.
+Colisiones,"Implementación de rectángulos (pygame.Rect) para colisiones de personajes, objetos y el entorno."
+UI/Menú,Clases separadas para manejar el renderizado del Libro de Recuerdos y los cuadros de diálogo de los NPCs.
